@@ -1,0 +1,45 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60vh;
+    height: 60vh;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+
+}
+.rowBottom {
+    display: flex;
+    width: 80%;
+    gap: 10px;
+}
+
+button{
+    flex: 1 1 40px;
+    padding: 20px;
+    color: #07a507;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #3e3e3e;
+}
+
+button.add {
+    height: calc(100% + 74px);
+
+}
+
+button.clear, .delete {
+    background-color: #07a507;
+    color: white;
+    flex: 1 1 40px;
+}
+
+button:hover{
+    background-color: #002c00;
+    color:white;
+    cursor: pointer;
+}

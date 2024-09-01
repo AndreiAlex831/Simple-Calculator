@@ -9,39 +9,34 @@
     <title>Calculator</title>
 </head>
 <body>
-<div class ="container">
-    <div class="topRow">
-        <div class="LCD">Text Here</div>
+<div class="calculator">
+    <div class="row">
+        <button class="number" data-type="number" data-value="7">7</button>
+        <button class="number" data-type="number" data-value="8">8</button>
+        <button class="number" data-type="number" data-value="9">9</button>
+        <button class="negative" data-type="sign">±</button>
+        <button class="delete" data-type="delete" >DEL</button>
     </div>
-
-<div class="buttonContainer"></div>
-<div class="firstRow">
-    <button class="number">7</button>
-    <button class="number">8</button>
-    <button class="number">9</button>
-    <button class="negative">±</button>
-    <button class="delete">DEL</button>
-</div>
-<div class="secondRow">
-    <button class="number">4</button>
-    <button class="nnumber">5</button>
-    <button class="number">6</button>
-    <button class="multiply">x</button>
-    <button class="divide">/</button>
-</div>
-<div class="thirdRow">
-    <button class="number">1</button>
-    <button class="number">2</button>
-    <button class="number">3</button>
-    <button class="subtract">-</button>
-    <button class="equals">=</button> <!-- this has to take two spaces-->
-</div>
-<div class="fourthRow">
-    <button class="clear">C</button>
-    <button class="number">0</button>
-    <button class="dot">.</button>
-    <button class="add">+</button>
-</div>
+    <div class="row">
+        <button class="number" data-type="number" data-value="4">4</button>
+        <button class="number" data-type="number" data-value="5">5</button>
+        <button class="number" data-type="number" data-value="6">6</button>
+        <button class="multiply" data-type="operator">x</button>
+        <button class="divide" data-type="operator">/</button>
+    </div>
+    <div class="row">
+        <button class="number" data-type="number" data-value="1">1</button>
+        <button class="number" data-type="number" data-value="2">2</button>
+        <button class="number" data-type="number" data-value="3">3</button>
+        <button class="subtract" data-type="operator">-</button>
+        <button class="add" data-type="operator">+</button>
+    </div>
+    <div class="rowBottom">
+        <button class="clear" data-type="clear">C</button>
+        <button class="number" data-type="number" data-value="0">0</button>
+        <button class="dot" data-type="decimal">.</button>
+        <button class="equals" data-type="equals">=</button>
+    </div>
 
 </div>
 <script src="script.js"></script>
