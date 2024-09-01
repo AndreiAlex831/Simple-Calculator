@@ -1,9 +1,21 @@
 .calculator {
+    padding: 20px;
+    background-color: #1b1a1a;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     gap: 10px;
-    width: 60vh;
+    width: 40vh;
     height: 60vh;
+    border-radius: 20px;
+
+}
+
+.display {
+    background-color: #6C785A;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 5px;
 }
 
 .row {
@@ -23,7 +35,7 @@ button{
     color: #07a507;
     font-size: 18px;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #3e3e3e;
 }
 
@@ -39,7 +51,7 @@ button.clear, .delete {
 }
 
 button:hover{
-    background-color: #002c00;
+    background-color: #056105;
     color:white;
     cursor: pointer;
 }
