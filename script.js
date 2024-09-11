@@ -15,13 +15,17 @@ function divide (a, b){
     return a / b;
 }
 
-let sum = document.getElementsByClassName('add');
-
 function operate (operator, a, b){
-    if (operator === sum){
+    if (operator === '+'){
         console.log(add(a, b));
+    }else if (operator === '-'){
+        console.log(subtract(a, b));
+    }else if (operator === '*'){
+        console.log(multiply(a, b));
+    }else if (operator === '/'){
+        console.log(divide(a, b));
     }
 }
 
-operate(sum, 7, 15);
+operate('/', 15, 10);
 
