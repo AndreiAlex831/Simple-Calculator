@@ -1,29 +1,27 @@
-let firstNumber;
-let secondNumber;
-let operator;
-function add (){
-    firstNumber = 7;
-    secondNumber = 3;
-    operator = '+';
+
+function add (a, b){
+    return a + b;
 }
 
-function subtract (){
-    
+function subtract (a, b){
+    return a - b;
 }
 
-function multiply (){
-    
+function multiply (a, b){
+    return a * b;
 }
 
-function divide (){
-    
+function divide (a, b){
+    return a / b;
 }
 
-function operate (sum){
-    if (operator === '+'){
-       sum =  firstNumber + secondNumber;
-       console.log(sum);
+let sum = document.getElementsByClassName('add');
+
+function operate (operator, a, b){
+    if (operator === sum){
+        console.log(add(a, b));
     }
 }
-add(firstNumber, secondNumber, operator);
-operate(add);
+
+operate(sum, 7, 15);
+
