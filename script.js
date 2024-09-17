@@ -1,4 +1,4 @@
-const keypad = document.querySelectorAll('.number');
+const keypad = document.querySelectorAll('[id=rowFirst]')
 keypad.addEventListener('click', function (){
     console.log(keypad.dataset.value);
 });
