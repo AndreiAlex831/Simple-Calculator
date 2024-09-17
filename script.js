@@ -1,3 +1,9 @@
+const keypad = document.querySelectorAll('.number');
+keypad.addEventListener('click', function (){
+    console.log(keypad.dataset.value);
+});
+
+
 
 function add (a, b){
     return a + b;
@@ -15,7 +21,7 @@ function divide (a, b){
     return a / b;
 }
 
-function operate (operator, a, b){
+function operate (a, operator, b){
     if (operator === '+'){
         console.log(add(a, b));
     }else if (operator === '-'){
@@ -27,5 +33,5 @@ function operate (operator, a, b){
     }
 }
 
-operate('/', 15, 10);
+operate(15, '/', 10);
 

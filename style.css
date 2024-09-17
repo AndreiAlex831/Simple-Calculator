@@ -7,7 +7,7 @@ body {
     align-items: center;
 }
 
-.rowContainer {
+#rowContainer {
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -15,7 +15,7 @@ body {
 
 }
 
-.calculator {
+#calculator {
     min-width: 270px;
     max-width: 270px;
     min-height: 400px;
@@ -27,7 +27,7 @@ body {
 
 }
 
-.displayContainer {
+#displayContainer {
     display: flex;
     margin-top: 20px;
 }
@@ -47,18 +47,21 @@ body {
     box-shadow: inset 1px 1px 3px black;
 }
 
-.row{
+#rowFirst, #rowSecond, #rowThird, #rowFourth{
     display: grid;
     grid-template-rows: repeat(4, 12px);
     grid-template-columns: repeat(5, 50px);
     grid-gap: 5px;
 }
 
-.addButton > .add {
+#addButton > #add {
     height: 115px;
 }
 
-.number, .dot{
+#bttn7, #bttn8, #bttn9,
+#bttn4, #bttn5, #bttn6,
+#bttn1, #bttn2, #bttn3,
+#bttn0, #dot{
     color: #fafafa;
     width: 50px;
     height: 50px;
@@ -68,8 +71,8 @@ body {
     border-style: none;
 }
 
-.negative, .delete, .multiply, .divide,
-.add, .subtract, .clear, .equals{
+#negative, #delete, #multiply, #divide,
+#add, #subtract, #clear, #equals{
     color: #2B6FE0;
     background-color: #24272C;
     width: 50px;
