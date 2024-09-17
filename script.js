@@ -1,6 +1,8 @@
-const keypad = document.querySelectorAll('[id=rowFirst]')
-keypad.addEventListener('click', function (){
-    console.log(keypad.dataset.value);
+const keypad = document.querySelectorAll('.number');
+keypad.forEach(keypad => {
+    keypad.addEventListener('click', function () {
+        console.log(keypad.dataset.value);
+    });
 });
 
 
