@@ -1,7 +1,8 @@
-const keypad = document.querySelectorAll('.number');
-keypad.forEach(keypad => {
-    keypad.addEventListener('click', function () {
-        console.log(keypad.dataset.value);
+const keypad = document.querySelectorAll('button');
+
+keypad.forEach(function (button) {
+    button.addEventListener('click', function () {
+        console.log(button.dataset.value);
     });
 });
 
