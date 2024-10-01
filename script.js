@@ -24,7 +24,7 @@ function clearScreen() {
     document.getElementById('display').innerText = '0';
 }
 
-// Basic math operations
+
 function add(a, b) {
     return a + b;
 }
@@ -61,8 +61,11 @@ function setOperator(op) {
     if (firstOperand === null) {
         firstOperand = currentInput;
     }
-    operator = op; 
-    currentInput = ''; 
+    operator = op;
+    currentInput += ` ${op} `;
+    document.getElementById('display').innerText = currentInput;
+
+    currentInput = '';
 }
 
 function calculateResult() {
