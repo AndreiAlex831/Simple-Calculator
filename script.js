@@ -78,3 +78,21 @@ function calculateResult() {
         resultDisplayed = true;
     }
 }
+
+function deleteLast() {
+    if (currentInput !== '') {
+        currentInput = currentInput.slice(0, -1); 
+        document.getElementById('display').innerText = currentInput || '0';
+    }
+}
+
+function toggleNegative() {
+    if (currentInput !== '') {
+        if (currentInput.startsWith('-')) {
+            currentInput = currentInput.slice(1);
+        } else {
+            currentInput = '-' + currentInput;
+        }
+        document.getElementById('display').innerText = currentInput;
+    }
+}

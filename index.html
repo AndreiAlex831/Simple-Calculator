@@ -18,8 +18,8 @@
         <button class="number" onclick="pressButton('7')">7</button>
         <button class="number" onclick="pressButton('8')">8</button>
         <button class="number" onclick="pressButton('9')">9</button>
-        <button id="negative" class="neg-btn" >±</button> <!--function-->
-        <button id="delete" class="del-btn" >DEL</button> <!--function-->
+        <button id="negative" class="neg-btn" onclick="toggleNegative('±')" >±</button>
+        <button id="delete" class="del-btn" onclick="deleteLast('DEL')" >DEL</button>
     </div>
     <div id="rowSecond">
         <button class="number" onclick="pressButton('4')">4</button>
@@ -37,7 +37,7 @@
     </div>
 
     <div id="rowFourth">
-        <button id="clear" class="clear-btn" onclick="clearScreen()">C</button> <!--function-->
+        <button id="clear" class="clear-btn" onclick="clearScreen()">C</button>
         <button class="number" onclick="pressButton('0')">0</button>
         <button id="dot" class="number" onclick="pressButton('.')">.</button>
         <button id="equals" class="equal-btn" onclick="calculateResult()">=</button>
